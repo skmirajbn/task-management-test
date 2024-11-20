@@ -1,0 +1,36 @@
+2024-11-20 17:57:04,193 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-11-20 17:57:04,193 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2024-11-20 17:57:04,194 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2024-11-20 17:57:04,202 INFO RPC interface 'supervisor' initialized
+2024-11-20 17:57:04,202 INFO supervisord started with pid 399
+2024-11-20 17:57:05,205 INFO spawned: 'syslogd' with pid 400
+2024-11-20 17:57:05,207 INFO spawned: 'nginxd' with pid 401
+2024-11-20 17:57:05,209 INFO spawned: 'php-fpmd' with pid 402
+2024-11-20 17:57:05,212 INFO spawned: 'crond' with pid 403
+2024-11-20 17:57:05,213 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:57:05,213 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:57:05,213 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:57:06,397 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-11-20 17:58:12,983 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-11-20 17:58:12,983 INFO Included extra file "/opt/docker/etc/supervisor.d/cron.conf" during parsing
+2024-11-20 17:58:12,983 INFO Included extra file "/opt/docker/etc/supervisor.d/dnsmasq.conf" during parsing
+2024-11-20 17:58:12,984 INFO Included extra file "/opt/docker/etc/supervisor.d/nginx.conf" during parsing
+2024-11-20 17:58:12,984 INFO Included extra file "/opt/docker/etc/supervisor.d/php-fpm.conf" during parsing
+2024-11-20 17:58:12,984 INFO Included extra file "/opt/docker/etc/supervisor.d/postfix.conf" during parsing
+2024-11-20 17:58:12,984 INFO Included extra file "/opt/docker/etc/supervisor.d/ssh.conf" during parsing
+2024-11-20 17:58:12,984 INFO Included extra file "/opt/docker/etc/supervisor.d/syslog.conf" during parsing
+2024-11-20 17:58:13,293 INFO RPC interface 'supervisor' initialized
+2024-11-20 17:58:13,293 INFO supervisord started with pid 132
+2024-11-20 17:58:14,296 INFO spawned: 'syslogd' with pid 133
+2024-11-20 17:58:14,298 INFO spawned: 'nginxd' with pid 134
+2024-11-20 17:58:14,301 INFO spawned: 'php-fpmd' with pid 135
+2024-11-20 17:58:14,304 INFO spawned: 'crond' with pid 137
+2024-11-20 17:58:14,305 INFO success: nginxd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:58:14,305 INFO success: php-fpmd entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:58:14,305 INFO success: crond entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+2024-11-20 17:58:15,568 INFO success: syslogd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
