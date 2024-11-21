@@ -43,7 +43,7 @@ export default function Index() {
                         </Button>
                     </div>
 
-                    <div className="overflow-hidden bg-white shadow-sm sm:rounded-lg dark:bg-gray-800">
+                    <div className="overflow-hidden bg-white shadow-sm dark:bg-gray-800 sm:rounded-lg">
                         <Table>
                             <TableHeader>
                                 <TableRow>
@@ -53,19 +53,22 @@ export default function Index() {
                                     <TableHead className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
                                         Actions
                                     </TableHead>
+                                    <TableHead className="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500">
+                                        Manage
+                                    </TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody className="bg-white dark:bg-gray-800">
-                                {taskLists?.map((task) => (
-                                    <TableRow key={task.id}>
+                                {taskLists?.map((taskList) => (
+                                    <TableRow key={taskList.id}>
                                         <TableCell className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">
-                                            {task.name}
+                                            {taskList.name}
                                         </TableCell>
                                         <TableCell className="whitespace-nowrap px-6 py-4 text-sm font-medium">
                                             <Link
                                                 href={route(
                                                     'task_lists.edit',
-                                                    task.id,
+                                                    taskList.id,
                                                 )}
                                                 className="text-indigo-600 hover:text-indigo-900"
                                             >
@@ -74,13 +77,23 @@ export default function Index() {
                                             <Link
                                                 href={route(
                                                     'task_lists.destroy',
-                                                    task.id,
+                                                    taskList.id,
                                                 )}
                                                 method="delete"
                                                 as="button"
                                                 className="ml-4 text-red-600 hover:text-red-900"
                                             >
                                                 Delete
+                                            </Link>
+                                        </TableCell>
+                                        <TableCell className="whitespace-nowrap px-6 py-4 text-sm font-medium text-gray-900 dark:text-gray-100">
+                                            <Link
+                                                href={route(
+                                                    'tasks.index',
+                                                    taskList.id,
+                                                )}
+                                            >
+                                                <Button>Manage</Button>
                                             </Link>
                                         </TableCell>
                                     </TableRow>

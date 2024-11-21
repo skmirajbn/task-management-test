@@ -14,7 +14,7 @@ class TaskListController extends Controller
      */
     public function index()
     {
-        $taskLists = TaskList::all();
+        $taskLists = TaskList::where('user_id', Auth::user()->id)->get();
 
         return Inertia::render('TaskLists/Index', compact('taskLists'));
     }
